@@ -1,5 +1,5 @@
 {
-  "name": "autoportraitsparis",
+  "name": "autoportraits",
   "version": "1.0.0",
   "description": "autoportrart",
   "main": "node.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Loustoc/autoportraitsparis.git"
+    "url": "git+https://github.com/Loustoc/autoportrart_source.git"
   },
   "author": "Lou Kail",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Loustoc/autoportraitsparis/issues"
+    "url": "https://github.com/Loustoc/autoportrart_source/issues"
   },
-  "homepage": "https://github.com/Loustoc/autoportraitsparis#readme",
+  "homepage": "https://github.com/Loustoc/autoportrart_source",
   "dependencies": {
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
