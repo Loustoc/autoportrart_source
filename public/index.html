@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Expires" content="Sat, 01 Jan 2000 00:00:01 GMT" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.22.2/es6-shim.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript" src="/js/iotmatrix.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/iotmatrix.css"
+      media="screen"
+    />
+    <title>Autoportr'art</title>
+  </head>
+  <body onload="info()" encoding="utf8">
+    <div id="info">
+      <div id="contenuinfo">
+        <img
+          onclick="start()"
+          src="images/close.png"
+          style="height: 20px; padding-top: 10px"
+        />
+        <p>Participez à ma collecte d'autoportraits en faisant le vôtre.</p>
+      </div>
+    </div>
+    <object
+      title="background_svg"
+      id="background"
+      data="images/animbckgrnd.svg"
+    ></object>
+    <div onload="getindex()" id="content">
+      <script src="js/iotmatrix.js"></script>
+      <div class="master">
+        <canvas
+          id="container"
+          width="350"
+          height="450"
+          style="border: 1px solid #777"
+        ></canvas>
+
+        <div id="toolbar">
+          <div id="outils">
+            <img
+              onclick="gommer()"
+              id="eraser"
+              style="border-radius: 20%; height: 50px"
+              src="images/eraser.png"
+            />
+            <img
+              class="activetool"
+              onclick="dessiner()"
+              id="pencil"
+              style="border-radius: 20%; height: 50px"
+              src="images/pencil.png"
+            />
+          </div>
+          <div class="actions">
+            <button onclick="envoi()" class="command" id="save">Envoyer</button>
+            <button class="reset" onclick="clearcanvas()">Effacer</button>
+          </div>
+          <div id="nom" class="nom" style="text-align: center"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

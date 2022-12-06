@@ -1,0 +1,30 @@
+{
+  "name": "autoportraitsparis",
+  "version": "1.0.0",
+  "description": "autoportrart",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loustoc/autoportraitsparis.git"
+  },
+  "author": "Lou Kail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Loustoc/autoportraitsparis/issues"
+  },
+  "homepage": "https://github.com/Loustoc/autoportraitsparis#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "imagekit": "^4.1.1",
+    "imagekit-javascript": "^1.5.4",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "socket.io": "^4.5.3"
+  }
+}
